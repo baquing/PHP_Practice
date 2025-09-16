@@ -503,20 +503,107 @@
     // echo "<br>";
 
     //string operator
-    echo "hello" . "world!", "<br>";
-    $x ="hello";
-    $x .= "world";
-    echo $x;
+    // echo "hello" . "world!", "<br>";
+    // $x ="hello";
+    // $x .= "world";
+    // echo $x;
+
+    // ternary 
+    // $color = 5 > 10 ?  "more" : "Less";
+    // echo $color
+    
+    //null  coalescing 
+    //$age = null ?? 20;
+    //echo $age;
+
+    // looping statement 
+    // while 
+    // do while 
+    // for 
+    // for each -> array
+
+// $student = array(
+        //     array("name"=>"Mary","age"=>17,"gender"=>"Female"),
+        //     array("name"=>"Joy","age"=>21,"gender"=>"Female"),
+        //     array("name"=>"Ben","age"=>30,"gender"=>"Male"),
+        // );
+
+        // foreach($students as $student){
+        //     foreach($student as $value){
+        //         echo $value;
+        //     }
+        // }:
+        
+        
+//         <h1>Students</h1>
+// <ul>
+//     <?php 
+//         foreach($students as $student){
+//             echo "<li>My name is ". $student['name'] . " age is . $student['age'] ." and i am ". $student['gender'] .".</li>";
+//         }
+?>
+<!-- </ul> -->
+
+
+
+<!-- //<h1>Students</h1>
+ \/<ul>?php foreach($students as $student){ ?> -->
+<!-- <li>My name <?php echo $student['name'] ?> is age <?php echo $student['age'] ?> is and i am <?php echo $student['gender'] ?></li> -->
 
 
 
 
+<!-- // <form action="php_practice.php" method="post">
+           <label for="">Username:</label>
+           <input type="text" name="username"><br>    
+           <label for="">Password:</label>
+             <input type="password" name="password">            
+             <br>
+            <input type="submit" value="Login">
 
+        </form>. --> 
+ <!-- ?php
+            echo "Username: " . $_GET['username'];
+            echo "Password: " . $_GET['password'];
+        ?-->
+        <!-- if(isset($_GET['username']) and isset($_GET['password'])){
+                echo "Username: " . $_GET['username'], "<br>";
+                echo "Password: " . $_GET['password'];
+            } -->
+            
+            
+            <!--?php
+            // if(isset($_REQUEST['username']) and isset($_REQUEST['password'])){
+            //     echo "Username: " . $_REQUEST['username'], "<br>";
+            //     echo "Password: " . $_REQUEST['password'];
+            // }
+        ?-->
 
+               <!-- if(isset($_GET['username']) and isset($_GET['password'])){ -->
+                <!-- echo "Username: " . $_GET['username'], "<br>";
+                echo "Password: " . $_GET['password'];
+            } -->
 
+            
+            <!--?php  
+            if(isset($_REQUEST['username']) and isset($_REQUEST['password'])){
+                echo "Username: " . $_REQUEST['username'], "<br>";
+                echo "Password: " . $_REQUEST['password'];
+            }
+        ?-->
 
-
-    ?>
+        <form action="php_practice.php" method="get">
+            <label for="">Email:</label>
+            <input type="text" name="username" value="<?php echo $username; ?>">
+            <br>    
+            <label for="">Password:</label>
+            <input type="password" name="password">
+            <br>
+            <label for="">Age:</label>
+            <input type="Age" name="Age">
+            <br>
+            <input type="submit" value="Login" name="btnSubmit">
+        </form>
 </body>
 </html>
 
